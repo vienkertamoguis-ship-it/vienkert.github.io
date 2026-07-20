@@ -1,11 +1,14 @@
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vienkert</title>
+
+<title>Vienkert Mystery Archive</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -13,106 +16,122 @@ box-sizing:border-box;
 }
 
 body{
-overflow:hidden;
-height:100vh;
-background:radial-gradient(circle at bottom,#0b1d3a,#000010 70%);
-font-family:Arial,sans-serif;
+min-height:100vh;
+background:linear-gradient(#000000,#160000,#050505);
+font-family:"Courier New",monospace;
+color:white;
+padding:30px;
 }
 
 h1{
-position:absolute;
-top:45%;
-width:100%;
 text-align:center;
-color:white;
-font-size:55px;
-text-shadow:0 0 20px #66ccff;
-z-index:10;
-animation:fade 2s;
+font-family:Georgia,serif;
+font-size:45px;
+color:#ff3333;
+text-shadow:0 0 20px red;
+margin-bottom:30px;
 }
 
-@keyframes fade{
-from{opacity:0;transform:translateY(30px);}
-to{opacity:1;transform:translateY(0);}
+h2{
+color:#ff5555;
+margin-top:30px;
+border-bottom:1px solid #ff3333;
+padding-bottom:10px;
 }
 
-.star{
-position:absolute;
-background:white;
-border-radius:50%;
-animation:twinkle 2s infinite alternate;
+p{
+font-size:18px;
+line-height:1.6;
+margin-top:15px;
+color:#dddddd;
 }
 
-@keyframes twinkle{
-from{opacity:.2;}
-to{opacity:1;}
+.card{
+background:rgba(0,0,0,0.7);
+border:1px solid #660000;
+padding:20px;
+margin-top:20px;
+box-shadow:0 0 20px #330000;
 }
 
-.shooting{
-position:absolute;
-width:180px;
-height:2px;
-background:linear-gradient(to right,white,transparent);
-transform:rotate(-35deg);
-animation:shoot 6s linear infinite;
-opacity:0;
+img{
+width:300px;
+margin-top:20px;
+border:3px solid #990000;
+box-shadow:0 0 15px red;
 }
 
-@keyframes shoot{
-0%{
-transform:translate(-300px,-300px) rotate(-35deg);
-opacity:0;
+.tag{
+color:#ff0000;
+font-weight:bold;
 }
-5%{
-opacity:1;
-}
-20%{
-transform:translate(1400px,800px) rotate(-35deg);
-opacity:0;
-}
-100%{
-opacity:0;
-}
-}
+
 </style>
+
 </head>
 
 <body>
 
-<h1>top secret</h1>
-<h2>🌅 Sunset Gallery</h2>
+<h1>VIENKERT MYSTERY ARCHIVE</h1>
 
-<img src="IMG_20260718_180915_682.jpg" width="300">
+<div class="card">
 
-<h2>🐈 My Cats</h2>
+<h2>📁 CLASSIFIED FILE #001</h2>
 
-<img src="cat1.jpg" width="300">
-<script>
+<p>
+Welcome to a collection of mysteries, hidden histories,
+and unexplained stories.
+</p>
 
-// Stars
-for(let i=0;i<250;i++){
-let s=document.createElement("div");
-s.className="star";
-let size=Math.random()*3+1;
-s.style.width=size+"px";
-s.style.height=size+"px";
-s.style.left=Math.random()*100+"vw";
-s.style.top=Math.random()*100+"vh";
-s.style.animationDuration=(Math.random()*3+1)+"s";
-document.body.appendChild(s);
-}
+</div>
 
-// Shooting stars
-for(let i=0;i<5;i++){
-let sh=document.createElement("div");
-sh.className="shooting";
-sh.style.top=Math.random()*40+"vh";
-sh.style.left="-300px";
-sh.style.animationDelay=(i*2)+"s";
-document.body.appendChild(sh);
-}
 
-</script>
+<div class="card">
 
+<h2>🔺 Secret Societies</h2>
+
+<p>
+Explore historical groups, symbols, and theories
+surrounding secret organizations.
+</p>
+
+<img src="IMG_20260718_180915_682.jpg">
+
+</div>
+
+
+<div class="card">
+
+<h2>👁 Hidden Mysteries</h2>
+
+<p>
+Topics:
+<br>
+- Ancient mysteries
+<br>
+- Unexplained events
+<br>
+- Conspiracy theories
+<br>
+- Secret documents
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>⚠️ Disclaimer</h2>
+
+<p>
+Some topics are theories and claims.
+Always compare information and research different sources.
+</p>
+
+</div>
+
+
+</body>
+</html>
 </body>
 </html>
