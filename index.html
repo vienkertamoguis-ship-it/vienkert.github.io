@@ -1,4 +1,3 @@
-</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,61 +8,50 @@
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-min-height:100vh;
-background:linear-gradient(#000000,#160000,#050505);
-font-family:"Courier New",monospace;
-color:white;
+margin:0;
 padding:30px;
+min-height:100vh;
+background:linear-gradient(#000,#120000,#000);
+color:white;
+font-family:"Courier New",monospace;
 }
 
 h1{
 text-align:center;
 font-family:Georgia,serif;
-font-size:45px;
 color:#ff3333;
+font-size:45px;
 text-shadow:0 0 20px red;
-margin-bottom:30px;
 }
 
-h2{
-color:#ff5555;
-margin-top:30px;
-border-bottom:1px solid #ff3333;
-padding-bottom:10px;
-}
-
-p{
-font-size:18px;
-line-height:1.6;
-margin-top:15px;
-color:#dddddd;
-}
-
-.card{
-background:rgba(0,0,0,0.7);
+.file{
+margin-top:25px;
 border:1px solid #660000;
-padding:20px;
-margin-top:20px;
-box-shadow:0 0 20px #330000;
+padding:15px;
+background:rgba(0,0,0,.7);
+}
+
+button{
+background:none;
+border:none;
+color:#ff5555;
+font-size:22px;
+font-family:"Courier New",monospace;
+cursor:pointer;
+}
+
+button:hover{
+color:white;
+text-shadow:0 0 15px red;
 }
 
 img{
 width:300px;
 margin-top:20px;
-border:3px solid #990000;
+border:2px solid red;
 box-shadow:0 0 15px red;
-}
-
-.tag{
-color:#ff0000;
-font-weight:bold;
+display:none;
 }
 
 </style>
@@ -74,64 +62,73 @@ font-weight:bold;
 
 <h1>VIENKERT MYSTERY ARCHIVE</h1>
 
-<div class="card">
 
-<h2>📁 CLASSIFIED FILE #001</h2>
-
-<p>
-Welcome to a collection of mysteries, hidden histories,
-and unexplained stories.
-</p>
-
+<div class="file">
+<button onclick="show(1)">📁 The Firmament</button>
+<br>
+<img id="img1" src="1166ab33555eb41a9792e4ab43706691.jpg">
 </div>
 
 
-<div class="card">
-
-<h2>🔺 Secret Societies</h2>
-
-<p>
-Explore historical groups, symbols, and theories
-surrounding secret organizations.
-</p>
-
-<img src="IMG_20260718_180915_682.jpg">
-
+<div class="file">
+<button onclick="show(2)">📁 The Great Deep</button>
+<br>
+<img id="img2" src="17d097c189cfcdaed84c6b72f335c7f3.jpg">
 </div>
 
 
-<div class="card">
-
-<h2>👁 Hidden Mysteries</h2>
-
-<p>
-Topics:
+<div class="file">
+<button onclick="show(3)">📁 Agartha</button>
 <br>
-- Ancient mysteries
-<br>
-- Unexplained events
-<br>
-- Conspiracy theories
-<br>
-- Secret documents
-</p>
-
+<img id="img3" src="2973f9403fef9d47c0aec637442192aa.jpg">
 </div>
 
 
-<div class="card">
-
-<h2>⚠️ Disclaimer</h2>
-
-<p>
-Some topics are theories and claims.
-Always compare information and research different sources.
-</p>
-
+<div class="file">
+<button onclick="show(4)">📁 The Water Is Universe</button>
+<br>
+<img id="img4" src="2c5beea18b382c7415505714884031cb.jpg">
 </div>
 
 
-</body>
-</html>
+<div class="file">
+<button onclick="show(5)">📁 Hollow Earth</button>
+<br>
+<img id="img5" src="64d4ab2684bd1c8677ac6fb9e9fa7814.jpg">
+</div>
+
+
+<div class="file">
+<button onclick="show(6)">📁 Types Of Alien</button>
+<br>
+<img id="img6" src="de4d4882e06ee17d67e6da7ed39c36e5.jpg">
+</div>
+
+
+<div class="file">
+<button onclick="show(7)">📁 North Pole</button>
+<br>
+<img id="img7" src="e5fcbe6db004cb1f4ae9f44d35f1b032.jpg">
+</div>
+
+
+<script>
+
+function show(num){
+
+let img=document.getElementById("img"+num);
+
+if(img.style.display=="block"){
+img.style.display="none";
+}
+else{
+img.style.display="block";
+}
+
+}
+
+</script>
+
+
 </body>
 </html>
